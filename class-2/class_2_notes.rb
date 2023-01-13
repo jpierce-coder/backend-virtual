@@ -83,7 +83,7 @@ library_1 = Library.new()
 library_1.add_book("Harry Potter")
 library_1.add_book("The Lord of the Rings")
 # library_1.print_books
-library_1.book_count = 5 # would show an incorrect count. Dangerous be careful
+# library_1.book_count = 5 # would show an incorrect count. Dangerous be careful
 puts library_1.book_count
 
 library_2 = Library.new()
