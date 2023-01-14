@@ -100,13 +100,14 @@ class Party
   # TWO @'s is a class variable and will be shared among instances
   # ONE @ is an instance variable and is unique to each instance that the class is called.
 
+  attr_accessor :attendee_count, :attendee_list
+
   def initialize
     @attendee_count = 0
     @attendee_list = []
   end
 
-
-# called a Class Method
+  # called a Class Method
   def add_attendee(name) 
     @attendee_count += 1
     @attendee_list.push(name)
@@ -135,5 +136,4 @@ party_2.add_attendee("Bubba")
 party_2.add_attendee("Forrest")
 party_2.add_attendee("Lt. Dan")
 party_2.add_attendee("Elvis Presley")
-
 party_2.print_attendees
